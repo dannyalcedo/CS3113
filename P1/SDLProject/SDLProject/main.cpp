@@ -1,3 +1,14 @@
+// Project 1 for Intro to Game Programming CS3113
+// By Danny Alcedo with code templates created by Professor Carmine Guida
+
+// zen.png sourced from the Overwatch Wiki at https://overwatch.gamepedia.com/File:Spray_Zenyatta_Adorable.png
+// thanks to wiki editor TheModster-GPUSER
+
+// discord.png sourced from devianart.com at https://www.deviantart.com/cfowler7-sfm/art/Overwatch-Discord-Orb-645417804
+// thanks to the artist cfowler7-SFM
+
+// harmony.png is the same image as discord.png but with edited values to make it more yellow/white
+
 #define GL_SILENCE_DEPRECATION
 
 #ifdef _WINDOWS
