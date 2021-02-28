@@ -1,13 +1,5 @@
-// Project 1 for Intro to Game Programming CS3113
+// Project 2: Pong for Intro to Game Programming CS3113
 // By Danny Alcedo with code templates created by Professor Carmine Guida
-
-// zen.png sourced from the Overwatch Wiki at https://overwatch.gamepedia.com/File:Spray_Zenyatta_Adorable.png
-// thanks to wiki editor TheModster-GPUSER
-
-// discord.png sourced from devianart.com at https://www.deviantart.com/cfowler7-sfm/art/Overwatch-Discord-Orb-645417804
-// thanks to the artist cfowler7-SFM
-
-// harmony.png is the same image as discord.png but with edited values to make it more yellow/white
 
 #define GL_SILENCE_DEPRECATION
 
@@ -55,7 +47,7 @@ float lastTicks = 0.0f;
 
 void Initialize() {
     SDL_Init(SDL_INIT_VIDEO);
-    displayWindow = SDL_CreateWindow("Ping-Pong", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_OPENGL);
+    displayWindow = SDL_CreateWindow("Pong", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_OPENGL);
     SDL_GLContext context = SDL_GL_CreateContext(displayWindow);
     SDL_GL_MakeCurrent(displayWindow, context);
     
@@ -117,8 +109,7 @@ void ProcessInput() {
                         tick_remove = (float)SDL_GetTicks() / 1000.0f;
                         ball_movement = glm::vec3(0.7, 0.3, 0);
                         lastTicks = 0.0f;
-                        std::cout<<tick_remove;
-                        std::cout<<"game started \n";
+                        //std::cout<<"game started \n";
                         break;
                 }
                 break; // SDL_KEYDOWN
@@ -204,7 +195,7 @@ void Update() {
             ball_movement.y = -0.3;//ball_movement.y * -1;
         }
         else if ((ball_position.x <= -4.8) || (ball_position.x >= 4.8)){
-            std::cout<<"game_end";
+            //std::cout<<"game_end";
             glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
             ball_movement = glm::vec3(0, 0, 0);
             game_end = true;
