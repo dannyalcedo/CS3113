@@ -1,3 +1,23 @@
+/*
+ Project 4: Rise of the AI
+ By Danny Alcedo for CS3113, Intro to Game Programming
+ Code snippets taken from Professor Guida's lectures
+ Platform and george graphics taken from the assets folder of the class.
+ Edited enemy eye graphic from: https://www.pngjoy.com/preview/m5m1v9b9k0b6e5_terraria-icon-terraria-moon-lord-eye-sprite-transparent/
+ 
+ The goal of this game is to defeat all of the A(EYE)s one at a time. To do so, you must jump on them.
+ If you touch them anywhere else but the top, you will lose. You win when you've defeated them all.
+ 
+ The A(EYE) on the bottom platform is a Wait and Go enemy. They are idle until you get close enough to them.
+ Then they will follow you until you defeat it.
+ 
+ The A(EYE) on the middle platform is a Jumper enemy. All they do is jump in place.
+ 
+ The A(EYE) in the top platform is a patroller enemy. Al they do is move back and forth on the platform until you defeat it.
+ 
+ And yes - you CAN double jump!
+ */
+
 #define GL_SILENCE_DEPRECATION
 
 #ifdef _WINDOWS
